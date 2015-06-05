@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+	<script type="text/javascript" src="./vendor/canvasjs.min.js"></script>  
+	<script type="text/javascript" src="./vendor/jquery-1.11.0.min.js"></script>  
+	<script type="text/javascript" src="./vendor/jquery.canvasjs.js"></script>
+	<script type="text/javascript" src="./js/ajax.js"></script>  
+	<link rel="stylesheet" type="text/css" href="./css/estilo.css">
+</head>
+<body>
+	<form id="formulario" name="formulario" method="post">
+		<div>
+			Desde: <input type="text" name="ddia" value="1" size="2">
+			<input type="text" name="dmes" value="1" size="2">
+			<input type="text" name="danio" value="2015" size="2">
+		</div>
+		<div>
+			Hasta: <input type="text" name="hdia" value="1" size="2">
+			<input type="text" name="hmes" value="1" size="2">
+			<input type="text" name="hanio" value="2015" size="2">		
+		</div>
+		<input type="submit" value="BUSCAR">
+	</form>
+	<div id="estado"></div>
+	<div id="chartContainer" style="height: 600px; width: 100%;"></div>
+	<div id="resultado"></div>
+</body>
+</html>
