@@ -49,7 +49,9 @@ function renderData(datos){
         title: "Temperatura"
     },
     axisY2: {
-        title: "Radiacion"
+        title: "Radiacion",
+        minimum: 0,
+        maximum: 1500
     },    
     data: [
     {        
@@ -57,14 +59,14 @@ function renderData(datos){
         xValueType: "dateTime",
         color: "#CCCC00",
         showInLegend: true,
-        legendText: "Radiacion",
+        legendText: "Temperatura",
         dataPoints: datos.canal0
     },{        
         type: "line",
         xValueType: "dateTime",
         axisYType: "secondary",
         showInLegend: true,
-        legendText: "Temperatura",        
+        legendText: "Radiacion",        
         dataPoints: datos.canal1
     }
     ]
